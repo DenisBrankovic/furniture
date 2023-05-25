@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="styles/headerFooter.css">
+	<link rel="stylesheet" type="text/css" href="styles/contact.css">
+
+	<title>Furniture - Kontakti</title>
+</head>
+<body>
+	<header>
+		<a href="index.html" id="logoContainer"><img src="images/logo.png"></a>
+		<a href="galdi.html">Galdi</a>
+		<a href="kresli.html">Kresli</a>
+		<a href="aksesuari.html">Aksesuari</a>
+		<a href="kontakti.html" class="selected">Kontakti</a>
+		<a href="#" class="flags"><img src="images/britishFlag.jpg"></a>
+		<a href="#" class="flags"><img src="images/latvianFlag.jpg"></a>
+	</header>
+	<section id="main">
+		<form action="" method="POST">
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name">
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email">
+			<label for="subject">Subject</label>
+			<input type="text" id="subject" name="subject">
+			<textarea placeholder="Message"></textarea>
+			<input type="submit" id="submitBtn" name="submit" value="Send">
+		</form>
+	</section>
+	<section id="loanCalculator">
+		<h1>Loan Calculator</h1>
+		<div id="calcTitles">
+			<h3>Amount</h3>
+			<h3>Interests</h3>
+			<h3>Duration</h3>
+		</div>
+		<div id="calculator">
+			<div class="calculatorInner">
+				<input type="text" id="amount" name="amount">
+				<span></span>
+			</div>
+			<div class="calculatorInner">
+				<div class="interestContainer">
+					<input type="radio" id="seven" name="interest" value="0.07">
+					<label for="seven" class="calcLbl">7%</label>
+				</div>
+				<div class="interestContainer">
+					<input type="radio" id="ten" name="interest" value="0.10">
+					<label for="ten" class="calcLbl">10%</label>
+				</div>
+				<div class="interestContainer">
+					<input type="radio" id="fifteen" name="interest" value="0.15">
+					<label for="fifteen" class="calcLbl">15%</label>
+				</div>
+			</div>
+			<div class="calculatorInner">
+				<select>
+					<option value="6">6 months</option>
+					<option value="12">12 months</option>
+					<option value="18">18 months</option>
+					<option value="24">2 years</option>
+					<option value="60">5 years</option>
+					<option value="84">7 years</option>
+				</select>
+			</div>
+		</div>
+		<div id="resultWrapper">
+			<div id="monthly">
+				<div id="monthlyTitle">Monthly payment</div>
+				<div id="monthlyResult"></div>
+			</div>
+			<div id="total">
+				<div id="totalTitle">Total</div>
+				<div id="totalResult"></div>
+			</div>
+		</div>
+		<button id="calculate">Calculate</button>
+	</section>
+	<footer>
+		Furniture 2023
+	</footer>
+	<script src="calculator.js"></script>
+</body>
+</html>
