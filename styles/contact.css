@@ -1,0 +1,197 @@
+		body{
+			width: 100vw;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center; 
+			background-color: beige;
+			overflow-x: hidden;
+		}
+		#main{
+			width: 100%;
+			padding: 100px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		form{
+			width: 45%;
+			padding: 50px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			border: solid black 1px;
+		}
+		label{
+			width: 65%;
+			text-align: left;
+			margin-bottom: 5px;
+		}
+		input{
+			width: 65%;
+			height: 30px;
+			margin-bottom: 10px;
+		}
+		textarea{
+			width: 65%;
+			height: 100px;
+		}
+		#submitBtn{
+			width: 120px;
+			height: 35px;
+			margin-top: 30px;
+			color: beige;
+			background-color: #4d0000;
+			border: none;
+		}
+
+		/* Calculator section */
+
+		#loanCalculator{
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 100px;
+			padding: 50px 0;
+		}
+		#calculator{
+			width: 70%;
+			height: 30vh;
+			display: flex; 
+			justify-content: space-around;
+			align-items: center; 
+			background-color: #f1f1f1;
+		}
+		#calcTitles{
+			width: 70%;
+			margin-top: 30px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			background-color: white;
+		}
+		.calculatorInner{
+			width: 30%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		h3{
+			width: 100%;
+			font-weight: 100;
+			text-align: center;
+		}
+		.interestContainer{
+			width: 100%;
+			height: 20%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		#amount{
+			border: solid black 1px;
+			outline: none;
+		}
+		span{
+			line-height: 0;
+			color: red;
+		}
+		#seven, #ten, #fifteen, .calcLbl{
+			width: 10%;
+			height: 20px;
+		}
+		select{
+			width: 60%;
+			height: 35px;
+			font-family: Arial;
+			text-align: center;
+			border: solid black 1px;
+			background-color: white;
+		}
+		#resultWrapper{
+			width: 70%;
+			height: 50px;
+			display: flex;
+			justify-content: space-around;
+			margin-bottom: 30px;
+			background-color: red;
+		}
+		#monthly, #total{
+			width: 50%;
+			height: 100%; 
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: green;
+		}
+		#monthlyTitle, #totalTitle{
+			width: 60%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: white;
+		}
+		#monthlyResult, #totalResult{
+			width: 40%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 110%;
+			font-weight: bold;
+			color: white;
+			background-color: grey;
+		}
+		#calculate{
+			width: 150px;
+			border: solid black 1px;
+			height: 40px;
+		}
+		
+		@media only screen and (max-width: 1000px){
+
+			#main{
+				padding: 50px 0;
+			}
+			form{
+				width: 90%;
+				padding: 10px;
+			}
+			label{
+				width: 90%;
+				font-size: 90%;
+			}
+			input{
+				width: 90%;
+				height: 25px;
+			}
+			textarea{
+				width: 90%;
+			}
+
+			/* Loan calculator */
+
+			#calculator, #calcTitles{
+				width: 100%;
+			}
+			select{
+				width: 90%;
+			}
+			h3{
+				font-size: 100%;
+			}
+			#resultWrapper{
+				width: 100%;
+			}
+			#monthlyTitle, #totalTitle{
+				font-size: 90%;
+			}
+		}

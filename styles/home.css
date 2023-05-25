@@ -1,0 +1,35 @@
+		body{
+			width: 100vw;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center; 
+			background-color: beige;
+			overflow-x: hidden;
+		}
+		#main{
+			width: 100%;
+			height: calc(100vh - 80px);
+			background-image: url("../images/front.jpg");
+			background-size: cover;
+			background-position: center;
+		}
+		#textWrapper{
+			padding: 100px 15%;
+		}
+		p{
+			font-size: 120%;
+		}
+		@media only screen and (max-width: 1000px){
+			
+			#main{
+				height: calc(100vh - 65px);
+			}
+			#textWrapper{
+				padding: 50px 5%;
+			}
+			p{
+				font-size: 100%;
+			}
+		}
